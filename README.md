@@ -2,11 +2,13 @@
 
 A quick set of utility methods to save, load, delete files in your iOS documents treee.
 
-Documents sub folders that don't exist are created on the fly (one level deep only.)
+Documents sub folders that don't exist are created on the fly (one
+level deep only.) This happens for ALL operations, load, delete
+etc. so take care. Fork it if you don't want this.
 
 # Usage
 
-Include `#import ODFileTools.h" and make sure you have TKAlertCenter available in your project.
+Include `#import ODFileTools.h` and make sure you have `TKAlertCenter` available in your project.
 
 (of course, add ODFileTools.m/h to your XCode project.)
 
