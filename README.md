@@ -18,11 +18,11 @@ Include `#import ODFileTools.h` and make sure you have `TKAlertCenter` available
 
     [ODFileTools save:@"filename" extension:@".png" documentsFolder:@"folder" data:someNSData];  
 
-# Load
+# Load - expects to load a keyed archive
 
-    NSData *loaded = [ODFileTools load:@"filename" documentsFolder:@"folder"];
+    [ODFileTools load:@"filename" documentsFolder:@"folder"];
 
-    NSData *loaded = [ODFileTools load:@"filename" extension:@".png" documentsFolder:@"folder"];
+    [ODFileTools load:@"filename" extension:@".png" documentsFolder:@"folder"];
     
 # Delete
 
@@ -39,6 +39,8 @@ Include `#import ODFileTools.h` and make sure you have `TKAlertCenter` available
     NSString *fullPath = [ODFileTools fullPath:@"filename" extension:@".png"  documentsFolder:@"folder"];
     
 # Notes
+
+Loading is currently just for keyed archives, extend it if you want it more general purpose.
 
 The extension methods are there primarily for my own apps, I often
 have multiple representations of the same data in different file
