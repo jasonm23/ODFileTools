@@ -1,9 +1,5 @@
 //
-//  ODFileTools.h
-//  OcodoArcConstrukt
-//
-//  Created by jason on 16/11/12.
-//  Copyright (c) 2012 ocodo. All rights reserved.
+// MITLicence
 //
 
 #import <Foundation/Foundation.h>
